@@ -48,7 +48,11 @@
     ```bash
     npm install
     ```
-  3.  **Run the project locally:**
+  3.  **Install swiper 12.0.2:**
+    ```bash
+    npm install swiper@12.0.2
+    ```
+  4.  **Run the project locally:**
     ```bash
     npm start
     ```
