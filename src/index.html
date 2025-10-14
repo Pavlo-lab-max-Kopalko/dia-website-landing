@@ -558,10 +558,19 @@
           hasErrors = true;
         }
 
-        if (messageTextarea.value.trim() === '' || messageTextarea.value.length < 10) {
+        if (messageTextarea.value.trim() === '') {
           messageError.classList.add('send-message__error--message-visible');
+          messageError.textContent = 'Enter a valid message';
           hasErrors = true;
         }
+
+        if (messageTextarea.value.length < 10 && messageTextarea.value.length > 0) {
+          messageError.classList.add('send-message__error--message-visible');
+          messageError.textContent = 'The message is invalid. It must be longer than 9 characters';
+          hasErrors = true;
+        }
+
+        console.log(messageError.value);
 
         if (hasErrors) {
           return;
