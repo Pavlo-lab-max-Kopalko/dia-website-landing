@@ -41,21 +41,13 @@
    # Getting Started:
 
   1.  **Clone the repository:**
-    ```bash
-    git clone https://pavlo-lab-max-kopalko.github.io/dia-website-landing/
-    ```
+    ```git clone https://pavlo-lab-max-kopalko.github.io/dia-website-landing/```
   2.  **Install dependencies:**
-    ```bash
-    npm install
-    ```
+    ```npm install```
   3.  **Install swiper 12.0.2:**
-    ```bash
-    npm install swiper@12.0.2
-    ```
+    ```npm install swiper@12.0.2```
   4.  **Run the project locally:**
-    ```bash
-    npm start
-    ```
+    ```npm start```
     (The application will typically open in your browser).
 
     ---
