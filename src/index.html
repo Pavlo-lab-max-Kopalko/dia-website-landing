@@ -427,13 +427,13 @@
                 </label>
                 <div class="send-message__error" id="error-name">Enter a valid name</div>
                 <label class="send-message__label">
-                  <textarea
+                  <input
                     type="text"
                     name="message"
                     class="send-message__input--message send-message__input"
                     placeholder="Your message"
                     autocomplete="true"
-                  ></textarea>
+                  >
                 </label>
                 <div class="send-message__error" id="error-message">Enter a valid message</div>
                 <button
@@ -532,7 +532,7 @@
       const form = document.getElementsByClassName('send-message__for')[0];
       const nameInput = document.querySelector('input[name="name"]');
       const emailInput = document.querySelector('input[name="email"]');
-      const messageTextarea = document.querySelector('textarea[name="message"]');
+      const messageInput = document.querySelector('textarea[name="message"]');
 
       form.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -558,7 +558,7 @@
           hasErrors = true;
         }
 
-        if (messageTextarea.value.trim() === '') {
+        if (messageInput.value.trim() === '') {
           messageError.classList.add('send-message__error--message-visible');
           messageError.textContent = 'Enter a valid message';
           hasErrors = true;
